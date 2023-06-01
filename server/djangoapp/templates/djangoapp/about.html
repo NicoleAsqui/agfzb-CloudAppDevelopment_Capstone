@@ -45,35 +45,38 @@ th, td {
 
 </style>
 <body>
+    {% include 'djangoapp/index.html' %}
+
+    {% block about_content %}   
     <h1>Welcome to Best Cars Dealership</h1>
-<p>Home to the best cars in North America. We sell domestic and imported cars at reasonable prices.</p>
+    <p>Home to the best cars in North America. We sell domestic and imported cars at reasonable prices.</p>
 
-<table>
-    <thead>
-        <tr>
-            <th>Make</th>
-            <th>Model</th>
-            <th>Year</th>
-        </tr>
-    </thead>
-    <tbody>
-        <tr>
-            <td>Ford</td>
-            <td>Mustang</td>
-            <td>2022</td>
-        </tr>
-        <tr>
-            <td>Chevrolet</td>
-            <td>Camaro</td>
-            <td>2021</td>
-        </tr>
-        
-    </tbody>
-</table>
+    <table>
+        <thead>
+            <tr>
+                <th>Make</th>
+                <th>Model</th>
+                <th>Year</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Ford</td>
+                <td>Mustang</td>
+                <td>2022</td>
+            </tr>
+            <tr>
+                <td>Chevrolet</td>
+                <td>Camaro</td>
+                <td>2021</td>
+            </tr>
+            
+        </tbody>
+    </table>
 
-<div class="image-container">
-    <img src="https://imageio.forbes.com/specials-images/imageserve/5d35eacaf1176b0008974b54/2020-Chevrolet-Corvette-Stingray/0x0.jpg?format=jpg&crop=4560,2565,x790,y784,safe&width=960" alt="Car Image">
-</div>
-
+    <div class="image-container">
+        <img src="https://imageio.forbes.com/specials-images/imageserve/5d35eacaf1176b0008974b54/2020-Chevrolet-Corvette-Stingray/0x0.jpg?format=jpg&crop=4560,2565,x790,y784,safe&width=960" alt="Car Image">
+    </div>
+    {% endblock %}
 </body>
 </html>

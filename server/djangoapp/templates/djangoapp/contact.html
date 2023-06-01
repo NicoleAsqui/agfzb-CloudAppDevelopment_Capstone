@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>About Us</title>
+    <title>Contact Us</title>
 </head>
 <style>
   <style>
@@ -69,6 +69,8 @@
 </style>
 </style>
 <body>
+    {% include 'djangoapp/index.html' %}
+    {% block contact_content %}
     <section class="contact-section">
         <div class="container">
             <div class="row">
@@ -96,5 +98,6 @@
             </div>
         </div>
     </section>
+  {% endblock %}
 </body>
 </html>
